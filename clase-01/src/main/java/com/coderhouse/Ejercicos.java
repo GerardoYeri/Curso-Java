@@ -122,6 +122,17 @@ public class Ejercicos {
 		
 		mostrarInfoCliente(edadCliente , nombreCliente);
 		
+		//25
+		System.out.println("-------------------------------------------------------");
+	
+		int valorHamburguesa = 10000;
+		int valorPizza = 7000;
+		int valorTarta = 5000;
+		System.out.println("Hamburguesa: $"+ valorHamburguesa);
+		System.out.println("Pizza: $"+ valorPizza);
+		System.out.println("Tarta: $"+ valorTarta);
+		System.out.println("El cliente compro una Hamburguesa, una pizza y una Tarta");
+		mostrarTotalCompra(valorHamburguesa, valorPizza, valorTarta);
 		
 		
 		
@@ -129,5 +140,10 @@ public class Ejercicos {
 	}
 		public static void mostrarInfoCliente(int edadCliente, String nombreCliente) {
 			System.out.println("La edad del cliente es: "+ edadCliente + " y el nombre es: "+ nombreCliente);
+		}
+		
+		public static void mostrarTotalCompra(int valorHamburguesa, int valorPizza, int valorTarta) {
+			System.out.println("El total de la compra es: "+ (valorHamburguesa+ valorPizza + valorTarta));
+			
 		}
 }
