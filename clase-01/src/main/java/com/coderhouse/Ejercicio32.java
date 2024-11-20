@@ -7,7 +7,7 @@ public class Ejercicio32 {
 	//32 Definir un método estático que reciba un int y devuelva su cuadrado.
 		Ejercicio32 cuadrado = new Ejercicio32(10, 0);
 		
-		cuadrado.calculoCuadrado();
+	 Ejercicio32.calculoCuadrado();
 		
 		System.out.println(numero1);
 		System.out.println(cuadrado);
