@@ -1,6 +1,6 @@
 package com.coderhouse;
 
-public class Ejercicios {
+public class Ejercicios1Al24 {
 
 	public static void main(String[] args) {
 	//Ejercicios sobre Variables y Tipos de Variables

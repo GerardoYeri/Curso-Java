@@ -6,7 +6,7 @@ import java.util.ArrayList;
   	
   	Ejercicio numero 26 Crear una clase Persona que tenga variables primitivas como edad y altura.
  */
-public class Persona {
+public class PersonaEjercicio26 {
 	
 
 	public static void main(String[] args) {

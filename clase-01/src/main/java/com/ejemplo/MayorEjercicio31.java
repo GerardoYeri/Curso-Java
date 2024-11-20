@@ -1,6 +1,6 @@
 package com.ejemplo;
 //31 Escribir un programa que use múltiples clases y acceda a sus métodos desde una clase principal.
-public class Mayor {
+public class MayorEjercicio31 {
 	
 	int num1 = 30;
 	int num2 = 40;

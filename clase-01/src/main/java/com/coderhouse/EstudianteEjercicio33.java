@@ -1,10 +1,10 @@
 package com.coderhouse;
 	//33 Crear una clase Estudiante con atributos como nombre y nota.
-public class Estudiante {
+public class EstudianteEjercicio33 {
 	
 	public static void main(String[] args) {
 		
-		Estudiante estudiante1 = new Estudiante("Gerardo", 7);
+		EstudianteEjercicio33 estudiante1 = new EstudianteEjercicio33("Gerardo", 7);
 		
 		estudiante1.mostrarInfoEstudiante();
 		
@@ -14,7 +14,7 @@ public class Estudiante {
 	String nombre;
 	double nota;
 	
-	public Estudiante(String nombre, double nota) {
+	public EstudianteEjercicio33(String nombre, double nota) {
 		this.nombre = nombre;
 		this.nota = nota;
 	}

@@ -1,8 +1,8 @@
 package com.coderhouse;
 //29 Crear un objeto de la clase Persona y asignar valores a sus variables.
 
-public class Persona2 {
-	static Persona2 personaA = new Persona2("Martin", "Depetris", 6, 1.30);
+public class Persona2Ejercicio29 {
+	static Persona2Ejercicio29 personaA = new Persona2Ejercicio29("Martin", "Depetris", 6, 1.30);
 	
 	public static void main(String[] args) {
 		personaA.mostrarInfo();
@@ -12,7 +12,7 @@ public class Persona2 {
 	int edad;
 	double altura;
 	
-	public Persona2(String nombre, String apellido, int edad, double altura) {
+	public Persona2Ejercicio29(String nombre, String apellido, int edad, double altura) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
