@@ -9,19 +9,31 @@ public class Clase01 {
 		
 		byte numeroChico = 100;
 		
-		int numeroGrade = 123225;
+		System.out.println(numeroChico);
+		
+		int numeroGrande = 123225;
+		
+		System.out.println(numeroGrande);
 		
 		char caracter = 'G';
 		
 		double numeroConDecimal = 123.43d;
 		
+		System.out.println(numeroConDecimal);
+		
 		float numeroConDecimaFloat = 1434.121f;
 		
+		System.out.println(numeroConDecimaFloat);
+		
 		long numeroMuyLargo = 423252453;
+		
+		System.out.println(numeroMuyLargo);
 		
 		short numeroCorto = 1343;
 		
 		boolean verdadero = false;
+		
+		System.out.println(verdadero);
 		
 		String cadenaDeTexto = "Mi primer string";
 		
@@ -54,7 +66,7 @@ public class Clase01 {
 		System.out.println(contador);
 		contador = 1; //reasignar el valor
 		System.out.println(contador);
-		contador = contador; // se reasigna a si mismos el valor que tenia antes
+		// contador = contador; // se reasigna a si mismos el valor que tenia antes
 		System.out.println(contador);
 		contador = contador + 1; //incrementar el valor
 		System.out.println(contador);
