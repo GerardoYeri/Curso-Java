@@ -2,7 +2,7 @@ package com.coderhouse;
 
 import java.util.Scanner;
 
-public class EjerciciosConIf1Al5 {
+public class EjerciciosClase02 {
 
 	public static void main(String[] args) {
 		
@@ -659,6 +659,8 @@ public class EjerciciosConIf1Al5 {
 			System.out.println("El numero de la adivinanza es "+ adivinanza+ " y NO acertaste");
 		}
 		
+		
+		
 		//39.Genera un número aleatorio entre 1 y 50 y verifica si está en el rango de [20, 30].
 		
 		int aleatorioNumMax = 50;
@@ -856,14 +858,21 @@ public class EjerciciosConIf1Al5 {
 		int adivinaRandom = (int)(Math.random()*adivinaRango) + adivinaMin;
 		
 		System.out.println("Ingresa un numero del 1 al 5");
-		String numeroUsuario = usuario.next();
 		
-		if (numeroUsuario.equals(adivinaRandom)) {
+		Scanner usuario2 = new Scanner(System.in);
+		
+		int numeroUsuario = usuario2.nextInt();
+		
+		if (numeroUsuario == adivinaRandom) {
 			System.out.println("El numero es "+ adivinaRandom +" adivinaste");
 		}else {
 			System.out.println("El numero es "+ adivinaRandom +" No adivinaste");
 		}
 		
+		//cierro Scanner
+		usuario2.close();
+		//cierro el primer Scanner
+		usuario.close();
 		//46.Crea un programa que asigne una beca: si la nota es >= 85 y la edad < 25, el estudiante recibe una beca.
 		
 		double notaEstudiante = 85;
@@ -879,6 +888,29 @@ public class EjerciciosConIf1Al5 {
 		}
 		
 		//47.Determina si un número generado aleatoriamente entre 1 y 100 es un número perfecto (la suma de sus divisores propios es igual al número).
+		
+		int numeroPerfectoMax = 100;
+		int numeroPerfectoMin = 1;
+		
+		int numeroPerfectoRango= numeroPerfectoMax - numeroPerfectoMin + 1;
+		int numeroPerfectoRandom = (int)(Math.random()*numeroPerfectoRango) + numeroPerfectoMin;
+		
+		System.out.println("El numero generado es "+ numeroPerfectoRandom);
+		
+		int sumaDivisores  = 0;
+		
+		for(int i= 1; i <= numeroPerfectoRandom/2 ; i++) {
+			if (numeroPerfectoRandom % i == 0) {
+				sumaDivisores = sumaDivisores + i;
+			}
+		}
+		
+		if(sumaDivisores == numeroPerfectoRandom) {
+			System.out.println("El numero "+ numeroPerfectoRandom+" ES PERFECTO");
+		}else {
+			System.out.println("El numero "+ numeroPerfectoRandom+" NO ES PERFECTO");
+		}
+		
 		
 		//48.Genera dos números aleatorios entre 1 y 100 y muestra cuál es mayor.
 		
@@ -897,8 +929,25 @@ public class EjerciciosConIf1Al5 {
 		}
 		
 		//49.Genera un número aleatorio entre 1 y 100 y evalúa si es mayor que 75 usando un operador ternario.
+		
+		String mayor75 = numeroAzar > 75 ? " es MAYOR a 75" : " NO es MAYOR a 75";
+		
+		System.out.println("EL numero "+numeroAzar+mayor75);
 		//50.Simula un juego de dados: si la suma de dos dados es 7 o 11, el jugador gana.
 		
+		int dadoValorMaximo = 6;
+		int dadoValorMinimo = 1;
 		
+		int dadoValorRango = dadoValorMaximo - dadoValorMaximo + 1;
+		int dado1ValorRandom = (int)(Math.random()*dadoValorRango)+ dadoValorMinimo;
+		int dado2ValorRandom = (int)(Math.random()*dadoValorRango)+ dadoValorMinimo;
+	
+		int sumaValorDados = dado1ValorRandom + dado2ValorRandom;
+		
+		if (sumaValorDados == 7 || sumaValorDados == 11) {
+			System.out.println("La suma de los dados es "+sumaValorDados+ " y Ganaste");
+		}else {
+			System.out.println("La suma de los dados es "+sumaValorDados+ " y Perdiste");
+		}
 	}
 }
