@@ -898,6 +898,7 @@ public class EjerciciosConIf1Al5 {
 		
 		//49.Genera un número aleatorio entre 1 y 100 y evalúa si es mayor que 75 usando un operador ternario.
 		//50.Simula un juego de dados: si la suma de dos dados es 7 o 11, el jugador gana.
-	
+		
+		
 	}
 }

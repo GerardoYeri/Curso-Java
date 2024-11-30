@@ -85,7 +85,8 @@ public class ArraysClase03 {
 				+ listaDeNombres.containsAll(listaDeNombres2));
 		*/
 		
-		/*for(String nombre : listaDeNombres) {
+		/*
+		for(String nombre : listaDeNombres) {
 			System.out.println("Nombre : " + nombre);
 		}
 		
