@@ -4,7 +4,9 @@ import com.coderhouse.ejercicios.objetos.Circulo;
 import com.coderhouse.ejercicios.objetos.Cuadrado;
 import com.coderhouse.ejercicios.objetos.Cuenta;
 import com.coderhouse.ejercicios.objetos.CuentaAhorros;
+import com.coderhouse.ejercicios.objetos.Desarrollador;
 import com.coderhouse.ejercicios.objetos.Escritorio;
+import com.coderhouse.ejercicios.objetos.Esfera;
 import com.coderhouse.ejercicios.objetos.Gerente;
 import com.coderhouse.ejercicios.objetos.Moto;
 import com.coderhouse.ejercicios.objetos.Perro;
@@ -69,8 +71,21 @@ public class MainEjercicios1a20 {
 		cuentaAhorro1.depositar(100);
 		cuentaAhorro1.aplicarInteres(5);
 		
+	//19.Crea una clase Figura3D con un método volumen, y una subclase Esfera que implemente su fórmula de volumen.
 		
+		Esfera esfera1 = new Esfera();
 		
+		esfera1.setRadio(3);
+		esfera1.calcularVolumen();
+		esfera1.mostrarVolumen();
+		
+	//20.Crea una clase Empleado con un método trabajar, y una subclase Desarrollador que sobrescriba el método y agregue un método adicional para programar.
+		
+		Desarrollador desarrollador1 = new Desarrollador();
+		
+		desarrollador1.trabajar();
+		desarrollador1.programar();
+	
 	}
 
 }
